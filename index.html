@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45 Master Sessions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap">
+    <style>
+        /* Custom CSS to match the design requirements */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+
+        /* Fluid Typography and Spacing */
+        html {
+          font-size: clamp(14px, 1vw + 0.5rem, 18px);
+        }
+        h1 {
+          font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+        }
+        h2 {
+          font-size: clamp(1.5rem, 3vw + 0.5rem, 2rem);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div id="app-container" class="p-4 sm:p-8 md:p-12">
+        <!-- Content will be rendered here by JavaScript -->
+    </div>
+
+    <script>
+        // Data content from the 45sessions.txt file
+        const workoutsContent = `The "45 MASTER SESSIONS Program"
+
+### Wave 1 / Block 1
+
+DAY 1: HEAVY DEADLIFT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 3 Deadlifts or 13” Deadlifts**. Goal: Top Set is at least **85% of Your 1RM**. Between Attempts: Complete 5-8 Ab Wheel Roll-Outs or :40 Second Long Lever Plank.
+* **VOLUME BLOCK**: Every minute on the minute (EMOM) for 10 minutes, complete **2-3 Deadlifts at 80-85% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: Complete **As Many Rounds As Possible in 10 Minutes** of: 5 Dumbbell Gorilla Rows (Each Side - HEAVY), 10 Dumbbell Stepping Lunges (Each Side - HEAVY), :40 Seconds Long Lever Plank.
+
+DAY 2: MEDIUM PRESS
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 4 Strict Presses or Push Presses**. Goal: Top Set is at least **80% of Your 1RM**. Between Attempts: Complete 5-8 Kettlebell or Dumbbell Uppercuts (Each Side - Moderate Weight).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **3-4 Overhead Presses at 70-75% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **5 Rounds In Front of A Running Clock**: :30 Seconds Standing Dumbbell Strict Presses, :30 Seconds Standing Dumbbell Waiter’s Walks (or Marching in Place), :30 Seconds Banded or Cable Face Pulls, :30 Seconds Rest.
+
+**DAY 3: LIGHT FUNCTIONAL MOVEMENT FOCUS**
+* **CARRY BLOCK**: EMOM for 10 minutes, complete **150 Foot Farmer’s Carry (Turns at 50 ft or Marching in Place) @ 40-45% of Your 50 ft Maximum Carry weight**. Rest or add 3-5 Burpees in the remainder of the minute.
+* **PULL-UP BLOCK**: EMOM for 10 minutes, complete **2-4 Wide Grip Pull-Ups (Assisted Optional) or 8-10 Inverted Rows/Lat Pull-Downs**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **CORE BLOCK**: EMOM for 10 minutes, complete **5-6 Teddy Bear Squats to a Low Box or 8-10 Deep Dumbbell Goblet Squats** (with Sandbag, Keg, Stone, Plate, Medicine Ball, Odd Object, etc.).
+
+**DAY 4: LIGHT SQUAT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 5 Squats or 5 Front Squats**. Goal: Top Set is at least **75% of Your 1RM**. Between Attempts: Complete 25 Hollow Rocks.
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **4-5 Squats at 60-65% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: EMOM for 10 minutes, complete **5 Bulgarian Split Squats (Each Side)**. Rest in the remainder of the minute.
+
+**DAY 5: MEDIUM BENCH
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 4 Bench Presses or Close Grip Bench Presses**. Goal: Top Set is at least **80% of Your 1RM**. Between Attempts: Complete 4-6 Dragon Flags or 8 Lying Leg Raises.
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **3-4 Bench Presses at 70-75% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: In Front of a Running Clock for 10 Minutes: ODD Minutes: 8 Single Arm Dumbbell Meadows Rows (Each Side); EVEN Minutes: 8 Single Arm Dumbbell Incline Bench Presses (Each Side).
+
+### Wave 1 / Block 2
+
+**DAY 6: LIGHT DEADLIFT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 5 Deficit Deadlifts or Snatch Grip Deadlifts**. Goal: Top Set is at least **75% of Your 1RM**. Between Attempts: Complete 10 Field Goal Sit-Ups (Light Weight).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **4-5 Deadlifts at 60-65% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **5 Rounds As Fast as Possible**: 5 Deadlift Rows (Heavy), 8 Romanian Deadlifts (Same Weight + Bar), 5 Burpee Lateral jumps Over the Bar.
+
+**DAY 7: HEAVY PRESS
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 3 Strict Presses or Jerks/Split Jerks**. Goal: Top Set is at least **85% of Your 1RM**. Between Attempts: Complete 5-8 Full Contact Twists (Each Side - Moderate Weight).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **2-3 Overhead Presses at 80-85% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **As Fast As Possible (Moderate Weight)**: Descending reps of Single Arm Bottom’s Up Kettlebell Presses (Left then Right) starting at 7 reps down to 3 reps.
+
+**DAY 8: MEDIUM FUNCTIONAL MOVEMENT FOCUS**
+* **CARRY BLOCK**: EMOM for 10 minutes, complete **50 Foot Offset Carry (or Marching in Place) @ 40-45% of Your 50 ft Maximum Carry weight**. Switch Arm Positions, then 50 Foot Offset Carry Back to the Starting Line. Rest in the remainder of the minute.
+* **PULL-UP BLOCK**: EMOM for 10 minutes, complete **3-5 Close Grip Chin-Ups (Assisted Optional) or 8-10 Supinated Inverted Rows/Lat Pull-Downs**. Rest or Add Push-Ups or an Ab/Oblique Exercise in the remainder of the minute.
+* **LOADING BLOCK**: EMOM for 10 minutes, complete **5-6 Loads or Extensions @ 40-45% Of Your 1RM** (with Sandbag, Keg, Stone, Plate, Medicine Ball, Odd Object, etc.).
+
+**DAY 9: HEAVY SQUAT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 3 Pause Squats or Box Squats**. Goal: Top Set is at least **85% of Your 1RM**. Between Attempts: Complete 8 Plate Halos (Each Side).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **2-3 Squats at 80-85% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: EMOM for 10 minutes, complete **5 Front Foot Elevated (2-4” Off the Ground) Split Squats (Each Side)**. Rest in the remainder of the minute.
+
+**DAY 10: LIGHT BENCH
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 5 Pause Bench Presses or Larson Presses**. Goal: Top Set is at least **75% of Your 1RM**. Between Attempts: Complete 10 Weighted Russian Twists (Each Side).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **4-5 Bench Presses at 60-65% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **5 Rounds**: :20 Seconds Single Arm Dumbbell Rows (Left Side), :20 Seconds Single Arm Dumbbell Rows (Right Side), :20 Seconds Dumbbell Floor Presses, 1:00 Minute Rest.
+
+### Wave 1 / Block 3
+
+**DAY 11: MEDIUM DEADLIFT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 4 Deadlifts or Pause Deadlifts**. Goal: Top Set is at least **80% of Your 1RM**. Between Attempts: Complete 5-8 Landmines (Each Side).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **3-4 Deadlifts at 70-75% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **As Fast As Possible (Moderate Weight)**: Descending reps of Barbell Rows (starting at 7) paired with 7 Sumo Stance Stiff Leg Deadlifts (Same Bar + Weight) for 5 rounds.
+
+**DAY 12: LIGHT PRESS
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 5 Strict Presses or “Z” Presses**. Goal: Top Set is at least **75% of Your 1RM**. Between Attempts: Complete 5-8 Landmines (Each Side - Moderate Weight).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **4-5 Overhead Presses at 60-65% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **Push-Up Death**: 6 Rounds of :20 Seconds Close Grip Push Ups/:10 Seconds Rest; then 6 Rounds of :20 Seconds Deficit Push Ups/:10 Seconds Rest; then 6 Rounds of :20 Seconds Traditional Push Ups/:10 Seconds Rest.
+
+**DAY 13: HEAVY FUNCTIONAL MOVEMENT FOCUS**
+* **CARRY BLOCK**: EMOM for 10 minutes, complete **50 Foot Single Arm Farmer’s Carry (or Marching in Place) @ 80-85% of Your 50 ft Maximum Carry weight**. Switch Hands and Carry the Weight 50 Feet Back to the Start. Rest or add 3-5 Burpees in the remainder of the minute.
+* **PULL-UP BLOCK**: EMOM for 10 minutes, complete **2-3 Weighted Pull-Ups (Assisted Optional) or 8-10 Inverted Rows/Lat Pull-Downs**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **CORE BLOCK**: EMOM for 10 minutes, complete **3-4 Shoulder Teddy Bear Squats to a Low Box or 8-10 Deep Dumbbell Goblet Squats** (with Sandbag, Keg, Stone, Plate, Medicine Ball, Odd Object, etc.).
+
+**DAY 14: MEDIUM SQUAT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 4 Squats or Box Squats**. Goal: Top Set is at least **80% of Your 1RM**. Between Attempts: Complete 5-8 Weighted Leg Raises or 5-8 T-Bar Crunches.
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **3-4 Squats at 70-75% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **As Many Rounds as Possible in 10 Minutes**: 10 Front Foot Elevated Goblet Squats, 10 Banded Good Mornings, 10 Bulgarian Split Squats (Each Side).
+
+**DAY 15: HEAVY BENCH
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 3 Bench Presses or Floor Presses**. Goal: Top Set is at least **85% of Your 1RM**. Between Attempts: Complete 6-8 Bandy Twisty Things (Each Side).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **2-3 Bench Presses at 80-85% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **For Time (No Rest Between Rounds)**: 10 Rounds of: 10 Close Grip Push Ups, 10 Strict Barbell Curls.
+
+### Wave 2 / Block 4
+
+**DAY 16: HEAVY DEADLIFT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 2 Deadlifts or 13” Deadlifts**. Goal: Top Set is at least **90% of Your 1RM**. Between Attempts: Complete 5-8 Kettlebell or Dumbbell Uppercuts (Each Side - HEAVY).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **2-3 Deadlifts at 80-85% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: Complete **As Many Rounds As Possible in 10 Minutes** of: 5 Landmines (Each Side - HEAVY), 10 Romanian Deadlifts, :40 Second Hollow Rock.
+
+**DAY 17: MEDIUM PRESS
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 3 Strict Presses or Push Presses**. Goal: Top Set is at least **85% of Your 1RM**. Between Attempts: Complete 5-8 Full Contact Twists (Each Side - HEAVY).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **3-4 Overhead Presses at 70-75% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **5 Rounds In Front of A Running Clock**: :30 Seconds Kettlebell or Dumbbell Waiter’s Walks (Each Side), :30 Seconds Push Press (Light Weight), :30 Seconds Banded or Cable Face Pulls, :30 Seconds Rest.
+
+**DAY 18: LIGHT FUNCTIONAL MOVEMENT FOCUS**
+* **CARRY BLOCK**: EMOM for 10 minutes, complete **150 Foot Farmer’s Carry (Turns at 50 ft or Marching in Place) @ 40-45% of Your 50 ft Maximum Carry weight**. Rest or add 3-5 Burpees in the remainder of the minute.
+* **PULL-UP BLOCK**: EMOM for 10 minutes, complete **2-4 Wide Grip Pull-Ups (Assisted Optional) or 8-10 Inverted Rows/Lat Pull-Downs**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **CORE BLOCK**: EMOM for 10 minutes, complete **5-6 Teddy Bear Squats to a Low Box or 8-10 Deep Dumbbell Goblet Squats** (with Sandbag, Keg, Stone, Plate, Medicine Ball, Odd Object, etc.).
+
+**DAY 19: LIGHT SQUAT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 4 Squats or 5 Front Squats**. Goal: Top Set is at least **75% of Your 1RM**. Between Attempts: Complete 25 Hollow Rocks.
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **4-5 Squats at 60-65% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: EMOM for 10 minutes, complete **5 Bulgarian Split Squats (Each Side)**. Rest in the remainder of the minute.
+
+**DAY 20: MEDIUM BENCH
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 3 Bench Presses or Close Grip Bench Presses**. Goal: Top Set is at least **85% of Your 1RM**. Between Attempts: Complete 4-6 Dragon Flags or 8 Lying Leg Raises.
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **3-4 Bench Presses at 70-75% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: In Front of a Running Clock for 10 Minutes: ODD Minutes: 8 Single Arm Dumbbell Meadows Rows (Each Side); EVEN Minutes: 8 Single Arm Dumbbell Incline Bench Presses (Each Side).
+
+### Wave 2 / Block 5
+
+**DAY 21: LIGHT DEADLIFT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 4 Deficit Deadlifts or Snatch Grip Deadlifts**. Goal: Top Set is at least **80% of Your 1RM**. Between Attempts: Complete 10 Field Goal Sit-Ups (Light Weight).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **4-5 Deadlifts at 60-65% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **5 Rounds As Fast as Possible**: 5 Dumbbell Hang Cleans (Each Side - Heavy), 8 Romanian Deadlifts (Same Weight + Bar), 5 Burpee Lateral jumps Over the Bar.
+
+**DAY 22: HEAVY PRESS
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 2 Strict Presses or Jerks/Split Jerks**. Goal: Top Set is at least **90% of Your 1RM**. Between Attempts: Complete 5-8 Full Contact Twists (Each Side - HEAVY).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **2-3 Overhead Presses at 80-85% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **As Fast As Possible (Moderate Weight)**: Descending reps of Single Arm Bottom’s Up Kettlebell Presses (Left then Right) starting at 7 reps down to 3 reps.
+
+**DAY 23: MEDIUM FUNCTIONAL MOVEMENT FOCUS**
+* **CARRY BLOCK**: EMOM for 10 minutes, complete **50 Foot Offset Carry (or Marching in Place) @ 40-45% of Your 50 ft Maximum Carry weight**. Switch Arm Positions, then 50 Foot Offset Carry Back to the Starting Line. Rest in the remainder of the minute.
+* **PULL-UP BLOCK**: EMOM for 10 minutes, complete **3-5 Close Grip Chin-Ups (Assisted Optional) or 8-10 Supinated Inverted Rows/Lat Pull-Downs**. Rest or Add Push-Ups or an Ab/Oblique Exercise in the remainder of the minute.
+* **LOADING BLOCK**: EMOM for 10 minutes, complete **5-6 Loads or Extensions @ 40-45% Of Your 1RM** (with Sandbag, Keg, Stone, Plate, Medicine Ball, Odd Object, etc.).
+
+**DAY 24: HEAVY SQUAT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 2 Pause Squats or Box Squats**. Goal: Top Set is at least **90% of Your 1RM**. Between Attempts: Complete 8 Plate Halos (Each Side).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **2-3 Squats at 80-85% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: EMOM for 10 minutes, complete **5 Front Foot Elevated (2-4” Off the Ground) Split Squats (Each Side)**. Rest in the remainder of the minute.
+
+**DAY 25: LIGHT BENCH
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 4 Pause Bench Presses or Larson Presses**. Goal: Top Set is at least **80% of Your 1RM**. Between Attempts: Complete 10 Weighted Russian Twists (Each Side).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **4-5 Bench Presses at 60-65% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **5 Rounds**: :20 Seconds Single Arm Dumbbell Rows (Left Side), :20 Seconds Single Arm Dumbbell Rows (Right Side), :20 Seconds Dumbbell Floor Presses, 1:00 Minute Rest.
+
+### Wave 2 / Block 6
+
+**DAY 26: MEDIUM DEADLIFT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 3 Deadlifts or Pause Deadlifts**. Goal: Top Set is at least **85% of Your 1RM**. Between Attempts: Complete 5-8 Landmines (Each Side).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **3-4 Deadlifts at 70-75% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **As Fast As Possible (Moderate Weight)**: Descending reps of Barbell Rows (starting at 7) paired with 7 Sumo Stance Stiff Leg Deadlifts (Same Bar + Weight) for 5 rounds.
+
+**DAY 27: LIGHT PRESS
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 4 Strict Presses or “Z” Presses**. Goal: Top Set is at least **80% of Your 1RM**. Between Attempts: Complete 5-8 Landmines (Each Side - Moderate Weight).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **4-5 Overhead Presses at 60-65% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **Push-Up Death**: 6 Rounds of :20 Seconds Close Grip Push Ups/:10 Seconds Rest; then 6 Rounds of :20 Seconds Deficit Push Ups/:10 Seconds Rest; then 6 Rounds of :20 Seconds Traditional Push Ups/:10 Seconds Rest.
+
+**DAY 28: HEAVY FUNCTIONAL MOVEMENT FOCUS**
+* **CARRY BLOCK**: EMOM for 10 minutes, complete **50 Foot Single Arm Farmer’s Carry (or Marching in Place) @ 80-85% of Your 50 ft Maximum Carry weight**. Switch Hands and Carry the Weight 50 Feet Back to the Start. Rest or add 3-5 Burpees in the remainder of the minute.
+* **PULL-UP BLOCK**: EMOM for 10 minutes, complete **2-3 Weighted Pull-Ups (Assisted Optional) or 8-10 Inverted Rows/Lat Pull-Downs**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **CORE BLOCK**: EMOM for 10 minutes, complete **3-4 Shoulder Teddy Bear Squats to a Low Box or 8-10 Deep Dumbbell Goblet Squats** (with Sandbag, Keg, Stone, Plate, Medicine Ball, Odd Object, etc.).
+
+**DAY 29: MEDIUM SQUAT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 3 Squats or Box Squats**. Goal: Top Set is at least **85% of Your 1RM**. Between Attempts: Complete 5-8 Weighted Leg Raises or 5-8 T-Bar Crunches.
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **3-4 Squats at 70-75% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **As Many Rounds as Possible in 10 Minutes**: 10 Front Foot Elevated Goblet Squats, 10 Banded Good Mornings, 10 Bulgarian Split Squats (Each Side).
+
+**DAY 30: HEAVY BENCH
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 2 Bench Presses or Floor Presses**. Goal: Top Set is at least **90% of Your 1RM**. Between Attempts: Complete 6-8 Bandy Twisty Things (Each Side).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **2-3 Bench Presses at 80-85% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **For Time (No Rest Between Rounds)**: 10 Rounds of: 10 Close Grip Push Ups, 10 Strict Barbell Curls.
+
+### Wave 3 / Block 7
+
+**DAY 31: HEAVY DEADLIFT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 1 Deadlift or 13” Deadlift**. Goal: Top Set is at least **95% of Your 1RM - OR SET A NEW PR!** Between Attempts: Complete 5-8 Kettlebell or Dumbbell Uppercuts (Each Side - HEAVY).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **2-3 Deadlifts at 80-85% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: Complete **As Many Rounds As Possible in 10 Minutes** of: 5 Landmines (Each Side - HEAVY), 10 Romanian Deadlifts, :40 Second Hollow Rock.
+
+**DAY 32: MEDIUM PRESS
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 2 Strict Presses or Push Presses**. Goal: Top Set is at least **90% of Your 1RM**. Between Attempts: Complete 5-8 Full Contact Twists (Each Side - HEAVY).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **3-4 Overhead Presses at 70-75% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **5 Rounds In Front of A Running Clock**: :30 Seconds Kettlebell or Dumbbell Waiter’s Walks (Each Side), :30 Seconds Push Press (Light Weight), :30 Seconds Banded or Cable Face Pulls, :30 Seconds Rest.
+
+**DAY 33: LIGHT FUNCTIONAL MOVEMENT FOCUS**
+* **CARRY BLOCK**: EMOM for 10 minutes, complete **150 Foot Farmer’s Carry (Turns at 50 ft or Marching in Place) @ 60-70% of Your 50 ft Maximum Carry weight**. Rest or add 3-5 Burpees in the remainder of the minute.
+* **PULL-UP BLOCK**: EMOM for 10 minutes, complete **2-4 Wide Grip Pull-Ups (Assisted Optional) or 8-10 Inverted Rows/Lat Pull-Downs**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **CORE BLOCK**: EMOM for 10 minutes, complete **5-6 Teddy Bear Squats to a Low Box or 8-10 Deep Dumbbell Goblet Squats** (with Sandbag, Keg, Stone, Plate, Medicine Ball, Odd Object, etc.).
+
+**DAY 34: LIGHT SQUAT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 3 Squats or 5 Front Squats**. Goal: Top Set is at least **85% of Your 1RM**. Between Attempts: Complete 25 Hollow Rocks.
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **4-5 Squats at 60-65% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: EMOM for 10 minutes, complete **5 Bulgarian Split Squats (Each Side)**. Rest in the remainder of the minute.
+
+**DAY 35: MEDIUM BENCH
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 2 Bench Presses or Close Grip Bench Presses**. Goal: Top Set is at least **90% of Your 1RM**. Between Attempts: Complete 4-6 Dragon Flags or 8 Lying Leg Raises.
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **3-4 Bench Presses at 70-75% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: In Front of a Running Clock for 10 Minutes: ODD Minutes: 8 Single Arm Dumbbell Meadows Rows (Each Side); EVEN Minutes: 8 Single Arm Dumbbell Incline Bench Presses (Each Side).
+
+### Wave 3 / Block 8
+
+**DAY 36: LIGHT DEADLIFT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 3 Deficit Deadlifts or Snatch Grip Deadlifts**. Goal: Top Set is at least **85% of Your 1RM**. Between Attempts: Complete 10 Field Goal Sit-Ups (Light Weight).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **4-5 Deadlifts at 60-65% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **5 Rounds As Fast as Possible**: 5 Dumbbell Hang Cleans (Each Side - Heavy), 8 Romanian Deadlifts (Same Weight + Bar), 5 Burpee Lateral jumps Over the Bar.
+
+**DAY 37: HEAVY PRESS
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 1 Strict Presses or Jerks/Split Jerks**. Goal: Top Set is at least **95% of Your 1RM - OR SET A NEW PR!** Between Attempts: Complete 5-8 Full Contact Twists (Each Side - HEAVY).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **2-3 Overhead Presses at 80-85% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **As Fast As Possible (Moderate Weight)**: Descending reps of Single Arm Bottom’s Up Kettlebell Presses (Left then Right) starting at 7 reps down to 3 reps.
+
+**DAY 38: MEDIUM FUNCTIONAL MOVEMENT FOCUS**
+* **CARRY BLOCK**: EMOM for 10 minutes, complete **50 Foot Offset Carry (or Marching in Place) @ 40-45% of Your 50 ft Maximum Carry weight**. Switch Arm Positions, then 50 Foot Offset Carry Back to the Starting Line. Rest in the remainder of the minute.
+* **PULL-UP BLOCK**: EMOM for 10 minutes, complete **3-5 Close Grip Chin-Ups (Assisted Optional) or 8-10 Supinated Inverted Rows/Lat Pull-Downs**. Rest or Add Push-Ups or an Ab/Oblique Exercise in the remainder of the minute.
+* **LOADING BLOCK**: EMOM for 10 minutes, complete **5-6 Loads or Extensions @ 40-45% Of Your 1RM** (with Sandbag, Keg, Stone, Plate, Medicine Ball, Odd Object, etc.).
+
+**DAY 39: HEAVY SQUAT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 1 Pause Squats or Box Squats**. Goal: Top Set is at least **95% of Your 1RM - OR SET A NEW PR!** Between Attempts: Complete 8 Plate Halos (Each Side).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **2-3 Squats at 80-85% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: EMOM for 10 minutes, complete **5 Front Foot Elevated (2-4” Off the Ground) Split Squats (Each Side)**. Rest in the remainder of the minute.
+
+**DAY 40: LIGHT BENCH
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 3 Pause Bench Presses or Larson Presses**. Goal: Top Set is at least **85% of Your 1RM**. Between Attempts: Complete 10 Weighted Russian Twists (Each Side).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **4-5 Bench Presses at 60-65% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **5 Rounds**: :20 Seconds Single Arm Dumbbell Rows (Left Side), :20 Seconds Single Arm Dumbbell Rows (Right Side), :20 Seconds Dumbbell Floor Presses, 1:00 Minute Rest.
+
+### Wave 3 / Block 9
+
+**DAY 41: MEDIUM DEADLIFT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 2 Deadlifts or Pause Deadlifts**. Goal: Top Set is at least **90% of Your 1RM**. Between Attempts: Complete 5-8 Landmines (Each Side).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **3-4 Deadlifts at 70-75% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **As Fast As Possible (Moderate Weight)**: Descending reps of Barbell Rows (starting at 7) paired with 7 Sumo Stance Stiff Leg Deadlifts (Same Bar + Weight) for 5 rounds.
+
+**DAY 42: LIGHT PRESS
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 3 Strict Presses or “Z” Presses**. Goal: Top Set is at least **85% of Your 1RM**. Between Attempts: Complete 5-8 Landmines (Each Side - Moderate Weight).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **4-5 Overhead Presses at 60-65% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **Push-Up Death**: 6 Rounds of :20 Seconds Close Grip Push Ups/:10 Seconds Rest; then 6 Rounds of :20 Seconds Deficit Push Ups/:10 Seconds Rest; then 6 Rounds of :20 Seconds Traditional Push Ups/:10 Seconds Rest.
+
+**DAY 43: HEAVY FUNCTIONAL MOVEMENT FOCUS**
+* **CARRY BLOCK**: EMOM for 10 minutes, complete **50 Foot Single Arm Farmer’s Carry (or Marching in Place) @ 85-90% of Your 50 ft Maximum Carry weight**. Switch Hands and Carry the Weight 50 Feet Back to the Start. Rest or add 3-5 Burpees in the remainder of the minute.
+* **PULL-UP BLOCK**: EMOM for 10 minutes, complete **2-3 Weighted Pull-Ups (Assisted Optional) or 8-10 Inverted Rows/Lat Pull-Downs**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **CORE BLOCK**: EMOM for 10 minutes, complete **3-4 Shoulder Teddy Bear Squats to a Low Box or 8-10 Deep Dumbbell Goblet Squats** (with Sandbag, Keg, Stone, Plate, Medicine Ball, Odd Object, etc.).
+
+**DAY 44: MEDIUM SQUAT
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 2 Zerecher Squats or 5 Front Squats**. Goal: Top Set is at least **90% of Your 1RM**. Between Attempts: Complete 10 Hanging Leg Raises.
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **3-4 Squats at 70-75% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **As Many Rounds as Possible in 10 Minutes**: 10 Bodyweight Squats, 10 Stepping Lunges, 10 Jumping Lunges, 10 Jumping Squats.
+
+**DAY 45: HEAVY BENCH
+* **STRENGTH BLOCK**: 10-20 minutes to build up to a **Top Set of 1 Bench Press or Floor Press**. Goal: Top Set is at least **95% of Your 1RM - OR SET A NEW PR!** Between Attempts: Complete 6-8 Bandy Twisty Things (Each Side).
+* **VOLUME BLOCK**: EMOM for 10 minutes, complete **2-3 Bench Presses at 80-85% of Your TOP SET FROM ABOVE**. Rest or add an Ab/Oblique Exercise in the remainder of the minute.
+* **ASSISTANCE FINISHER**: **For Time (No Rest Between Rounds)**: 10 Rounds of: 10 Close Grip Push Ups, 10 Strict Barbell Curls.`;
+
+        let workoutData = [];
+        let currentPage = 'grid';
+        let selectedDay = null;
+
+        /**
+         * Parses the raw text content to create a structured JavaScript object.
+         * This function is now more robust to handle all workout title formats.
+         */
+        const parseWorkoutData = () => {
+            const sessions = workoutsContent.split(/DAY\s+\d+:/).slice(1);
+            return sessions.map((session, index) => {
+                const dayNumber = index + 1;
+                // Split the session into title line and content blocks
+                const lines = session.trim().split('\n');
+                const fullTitle = lines.shift().trim(); // First line is the title
+
+                // Parse intensity and workout type from the title line
+                const titleParts = fullTitle.split(/\s+/);
+                const intensity = titleParts.shift();
+                const workoutType = titleParts.join(' ');
+
+                // Find the start of the workout blocks after the title and intro paragraphs
+                const remainingText = lines.join('\n');
+                const rawBlocks = remainingText.split(/\*\s+\*\*/);
+                
+                const workoutBlocks = rawBlocks.map(block => {
+                    const [blockTitlePart, ...blockContentParts] = block.split(/:\s/);
+                    const blockTitle = blockTitlePart.trim().replace(/\*\*/g, '');
+                    const blockContent = blockContentParts.join(':\s').trim();
+                    
+                    return {
+                        title: blockTitle,
+                        content: blockContent
+                    };
+                });
+
+                // Determine the block number and wave number based on the day
+                const waveNumber = Math.floor((dayNumber - 1) / 15) + 1;
+                const blockNumber = Math.floor(((dayNumber - 1) % 15) / 5) + 1;
+
+                return {
+                    day: dayNumber,
+                    wave: waveNumber,
+                    block: blockNumber,
+                    intensity: intensity,
+                    workoutType: workoutType,
+                    details: workoutBlocks
+                };
+            });
+        };
+
+        // Mapping from wave/intensity to direct Tailwind color classes
+        const colorMap = {
+            '1-LIGHT': 'bg-green-100 hover:bg-green-200',
+            '1-MEDIUM': 'bg-green-400 hover:bg-green-500',
+            '1-HEAVY': 'bg-green-700 hover:bg-green-800 text-white',
+            '2-LIGHT': 'bg-blue-100 hover:bg-blue-200',
+            '2-MEDIUM': 'bg-blue-400 hover:bg-blue-500',
+            '2-HEAVY': 'bg-blue-700 hover:bg-blue-800 text-white',
+            '3-LIGHT': 'bg-orange-100 hover:bg-orange-200',
+            '3-MEDIUM': 'bg-orange-400 hover:bg-orange-500',
+            '3-HEAVY': 'bg-orange-700 hover:bg-orange-800 text-white',
+        };
+
+        // Render the main grid view
+        const renderGrid = () => {
+            const appContainer = document.getElementById('app-container');
+            const intensityMap = { 'LIGHT': 'L', 'MEDIUM': 'M', 'HEAVY': 'H' };
+
+            // Start with a clean slate
+            appContainer.innerHTML = `
+                <h1 class="text-4xl sm:text-5xl font-bold text-center text-gray-800 mb-6 sm:mb-8 md:mb-12">
+                    45 MASTER SESSIONS
+                </h1>
+                <div id="grid-container" class="grid grid-cols-3 sm:grid-cols-5 gap-2 sm:gap-4 max-w-7xl mx-auto"></div>
+            `;
+
+            const gridContainer = document.getElementById('grid-container');
+            
+            // Loop through workout data to create grid items
+            workoutData.forEach(workout => {
+                const colorKey = `${workout.wave}-${workout.intensity}`;
+                const colorClasses = colorMap[colorKey] || 'bg-gray-200 hover:bg-gray-300'; // Fallback color
+
+                const gridItem = document.createElement('div');
+                gridItem.className = `
+                    flex flex-col items-center justify-center p-2 sm:p-4 rounded-lg shadow-md
+                    text-lg sm:text-2xl font-bold cursor-pointer transition-transform duration-200
+                    transform hover:scale-105 active:scale-95 ${colorClasses}
+                `;
+                gridItem.dataset.day = workout.day;
+                gridItem.innerHTML = `
+                    <span class="text-sm sm:text-base font-light text-gray-600">
+                        Day ${workout.day}
+                    </span>
+                    <span class="text-3xl sm:text-5xl font-extrabold mb-1">
+                        ${intensityMap[workout.intensity]}
+                    </span>
+                    <span class="text-xs sm:text-sm font-semibold tracking-wider">
+                        ${workout.workoutType.split(' ')[0]}
+                    </span>
+                `;
+
+                // Add click event listener to each grid item
+                gridItem.addEventListener('click', () => {
+                    currentPage = 'detail';
+                    selectedDay = parseInt(gridItem.dataset.day);
+                    renderWorkoutDetail();
+                });
+
+                gridContainer.appendChild(gridItem);
+            });
+        };
+
+        // Render the workout detail view
+        const renderWorkoutDetail = () => {
+            const appContainer = document.getElementById('app-container');
+            const workout = workoutData[selectedDay - 1];
+
+            if (!workout) {
+                appContainer.innerHTML = `<div class="p-8 text-center text-red-500">Workout details not found.</div>`;
+                return;
+            }
+
+            const { day, intensity, workoutType, details, wave, block } = workout;
+
+            // Generate the HTML for the details blocks
+            const detailsHtml = details.map(block => `
+                <div class="bg-gray-100 p-6 rounded-lg shadow-inner">
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-700 mb-2">${block.title}</h2>
+                    <div class="text-gray-600 leading-relaxed">${block.content.replace(/\*/g, '').replace(/\n/g, '<br />')}</div>
+                </div>
+            `).join('');
+
+            // Set the content of the app container
+            appContainer.innerHTML = `
+                <div class="max-w-4xl mx-auto w-full bg-white p-6 sm:p-10 rounded-xl shadow-2xl space-y-6">
+                    <div class="flex flex-col items-start space-y-2">
+                        <div class="text-sm sm:text-base font-light text-gray-600">
+                            Wave ${wave} / Block ${block}
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 leading-tight">
+                            Day ${day}: ${intensity} ${workoutType}
+                        </h1>
+                    </div>
+
+                    <div class="space-y-6">
+                        ${detailsHtml}
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
+                        <button id="prev-btn" class="w-full sm:w-auto px-6 py-3 bg-gray-700 text-white font-bold rounded-full shadow-lg hover:bg-gray-900 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
+                            Previous Day
+                        </button>
+                        <button id="return-btn" class="w-full sm:w-auto px-6 py-3 bg-blue-500 text-white font-bold rounded-full shadow-lg hover:bg-blue-600 transition-all duration-200">
+                            Return to Grid
+                        </button>
+                        <button id="next-btn" class="w-full sm:w-auto px-6 py-3 bg-gray-700 text-white font-bold rounded-full shadow-lg hover:bg-gray-900 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
+                            Next Day
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            // Add event listeners to the buttons
+            document.getElementById('return-btn').addEventListener('click', () => {
+                currentPage = 'grid';
+                renderGrid();
+            });
+
+            const prevBtn = document.getElementById('prev-btn');
+            if (selectedDay === 1) {
+                prevBtn.disabled = true;
+            } else {
+                prevBtn.addEventListener('click', () => {
+                    selectedDay--;
+                    renderWorkoutDetail();
+                });
+            }
+
+            const nextBtn = document.getElementById('next-btn');
+            if (selectedDay === 45) {
+                nextBtn.disabled = true;
+            } else {
+                nextBtn.addEventListener('click', () => {
+                    selectedDay++;
+                    renderWorkoutDetail();
+                });
+            }
+        };
+
+        // Initialize the application
+        window.onload = () => {
+            try {
+                workoutData = parseWorkoutData();
+                renderGrid();
+            } catch (e) {
+                console.error("Error initializing the application:", e);
+                document.getElementById('app-container').innerHTML = `
+                    <div class="p-8 text-center text-red-500">
+                        An error occurred while loading the workout data. Please check the console for details.
+                    </div>
+                `;
+            }
+        };
+
+    </script>
+</body>
+</html>
